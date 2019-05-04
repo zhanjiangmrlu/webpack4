@@ -1,9 +1,9 @@
 import _ from 'lodash';
 
-function createDomElement() {
-  let dom = domcument.createDomElement('div');
+function component() {
+  let dom = document.createElement('div');
   dom.innerHTML = _.join(['aicoder', '.com', 'wow'], '');
   return dom;
 }
 
-document.body.appendChild(createDomElement());
+document.body.appendChild(component());
