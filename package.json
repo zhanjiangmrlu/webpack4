@@ -2,7 +2,7 @@
   "name": "webpack4",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "dependencies": {
     "lodash": "^4.17.11",
     "webpack": "^4.30.0",
@@ -14,7 +14,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack --config webpack.config.js",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
