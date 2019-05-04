@@ -4,8 +4,8 @@ module.exports = {
   mode: 'development',
   entry: './src/inxdex.js',
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, './dist')
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -15,6 +15,10 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader']
+      },
+      {
+        test: /\.(woff|woff2|eot|otf)$/,
         use: ['file-loader']
       }
     ]
