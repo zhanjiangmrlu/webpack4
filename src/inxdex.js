@@ -1,9 +1,11 @@
 import _ from 'lodash';
+import './style.css'
 
 function component() {
-  let dom = document.createElement('div');
-  dom.innerHTML = _.join(['aicoder', '.com', 'wow'], '');
-  return dom;
+  let element = document.createElement('div');
+  element.innerHTML = _.join(['Hello', '.com', 'wow'], '');
+  element.classList.add('hello');
+  return element;
 }
 
 document.body.appendChild(component());
